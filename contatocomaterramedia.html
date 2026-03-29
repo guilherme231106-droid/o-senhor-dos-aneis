@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato com a Terra Média</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div id="titulo_principal">
+            <h1>O Senhor dos Anéis</h1>
+            <h2>Uma das maiores trilogias da história do cinema</h2>
+            <nav>
+              <a href="index.html">Home</a>
+              <a href="sinopse.html">Sinopse</a>
+              <a href="imagem.html">Imagem do filme</a>
+              <a href="personagensprincipais.html">Personagens principais</a>
+              <a href="informacoes.html">Informacões</a>
+              <a href="ordemdosfilmes.html" >Ordem dos filmes da triologia</a>
+              <a href="Curiosidades.html">Curiosidades</a>
+              <a href="Impacto.html ">Impancto Cultural</a>
+              <a href="conclusao.html">Conclusão</a>
+              <a href="contato.html">Contato</a>
+              <a href="contatocomaterramedia.html">Contato com a Terra Média</a>
+            </nav>
+        </div>
+        <h2 class="titulo_secundario">Contato com a Terra Média</h2>
+        <p>Envie sua mensagem diretamente para o Conselho de Elrond</p>
+        <form action="" method="" autocomplete="off">
+
+            <label for="nomepessoa">Nome na Terra Média</label>
+            <input type="name" name="nomepessoa" id="nomepessoa" minlength="3" maxlength="20" required placeholder="Ex: Aragorn"><br><br>
+            
+            <label for="email">Corvo eletronico (Email)</label>
+            <input type="email" name="email" id="email"><br><br>
+
+            <label for="ano">Ano de nascimento</label>
+            <input type="number" id="ano" name="ano" max="2026" min="1900"><br><br>
+
+            <fieldset>
+                <legend>Qual á sua raça?</legend>
+                <label for="humano"><input type="radio" name="humano" id="humano" value="Humano">Humano
+                </label>
+
+                <label for="elfo"><input type="radio" name="elfo" id="elfo" value="Elfo">Elfo
+                </label>
+
+                <label for="anao"><input type="radio" name="anao" id="anao" value="Anão">Anão
+                </label>
+
+                <label for="hobbit"><input type="radio" name="hobbit" id="hobbit" value="Hobbit">Hobbit
+                </label>
+            </fieldset>
+
+            <label> Escolha seu filme favorito:</label>
+            <select>
+                <option>o Retorno do Rei</option>
+                <option>As Duas Torres</option>
+                <option>A Sociedade do Anel</option>
+            </select><br><br>
+
+            <label>Escolha um local da Terra Média:</label>
+            <select>
+                <option selected>Gondor</option>
+                <option>Rohan</option>
+                <option>Mordor</option>
+                <option>Condado</option>
+            </select><br><br>
+
+            <fieldset>
+                <legend>Suas habilidades</legend>
+
+                <input type="checkbox" id="espada">
+                <label for="espada">Espada</label>
+
+                <input type="checkbox" id="arco">
+                <label for="arco">Arco e flecha</label>
+
+                <input type="checkbox" id="magia">
+                <label for="magia">Magia</label>
+
+                <input type="checkbox" id="furtividade">
+                <label for="furtividade">Furtividade Hobbit</label>
+            </fieldset>
+
+            <label for="nivel">Nível de coraragem (1 a 10):</label>
+            <input type="range" max="10" min="1" id="nivel" name="nivel"><br><br>
+
+            <label for="reino">Seu Reino de Origem</label>
+            <input type="reino" name="reino" id="reino"><br><br>
+
+            <label for="cor">Cor do seu manto</label>
+            <input type="color" id="cor" name="cor"><br><br>
+
+            <label for="arquivo">Anexe uma relíquia</label>
+            <input type="file" id="arquivo" name="arquivo"><br><br>
+
+            <label for="descricao">Mensagem ao Conselho:</label><br>
+            <textarea cols="30" rows="5" name="descricao" id="descricao" placeholder="Escreva sua missão..."></textarea><br><br>
+
+            <button type="reset">Apagar pergaminho</button>
+            <button type="submit">Enviar para Valfenda</button>
+        </form>
+    </body>
+</html>
