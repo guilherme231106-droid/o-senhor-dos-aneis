@@ -26,7 +26,8 @@
             #layout{ 
                 font-size: 1em; /*Herda o tamanho do pai dele (body)com o multiplicador*/ 
                 display: flex;
-                font-style: normal; /*Estilo da fonte: ialic - normal - oblique*/
+                flex-direction: column; /*Usado para definir a direção dos elementos que são filhos de um display flex*/
+                font-style: normal; /*Estilo da fonte: italic - normal - oblique*/
                 line-height: 30px; /*Espaçamento de linhas*/
                 font-weight: 400; /*Negrito em css 100 a 900 bold e bolder*/
                 text-transform: none; /*Capitalização do texto: uppercase - lowercase - captalize*/
@@ -35,8 +36,31 @@
                 letter-spacing: none; /*Espaçamento entre letras*/
                 text-indent: 20px;/*Espaçamento de paragrafo primeira linha*/
                 text-align: justify; /*Alinhamento do texto: left - right - justify e center*/
+                /*border-style: dashed; /*Estilo da borda; solid, dashed, dotted, double, groove ridge, inset, outset, border-width: 5px; /*Esperssura da borda
+                border: dashed 5px Rgb(52,235,164); /*Definir estilo, espessura e cor da borda numa mesma linha*/
+                border-top: dotted 10px rebeccapurple;
+                border-left: dotted 20px red;
+                border-bottom: solid 15px #fff000;
+                /*border-right: estilizar lado direito da borda*/
+                border-radius: 100px  50px; /*Arrendondar os cantos da borda*/
+                margin: 20px; /*Margem do lado de FORA da borda*/
+                margin-left: 20px ; /*Margem a esquerda*/
+                margin-right: 20px ; /*Margem a direita*/
+                margin-bottom: 20px ;/*Margem de baixo da borda*/
+                margin-top: auto 20px ;/*Margem de cima fora da borda*/
+                padding: 20px; /*Margem DENTRO da borda */
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
 
             nav a{
                 text-decoration: none;
+            }
+
+            .teste_display.{
+                background-color: orange;
+                display: block;
+                width: 200px;
             }
