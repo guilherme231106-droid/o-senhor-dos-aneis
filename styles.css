@@ -83,11 +83,46 @@
                 border: solid 3px orange;
                 list-style-position: outside; /*Ele serve para dizer ao navegador se o marcador da lista faz parte ou não do texto da lista; inside a outside*/
             }
-
             #impacto{
-                list-style-image: url(image/senhordosaneis_fundo.jpg); /*Carrega imagem ao fundo do elemento html*/
-                background-repeat: ; /* no-repeat / repeat / repeat-y / Configura a forma como a imagem ira repetir ao fundo do elemento html*/ 
-                background-position: center;
+                /*background: url('imagem/senhordosaneis_fundo.jpg); no-repeat; resume a imagem de fundo*/
+                background-image: url(image/senhordosaneis_fundo.jpg); /*Carrega imagem ao fundo do elemento html*/
+                /*background-repeat: no-repeat; /* no-repeat / repeat / repeat-y / repeat-x /Configura a forma como a imagem ira repetir ao fundo do elemento html*/ 
+                /*background-position: center; /*left, right, top, bottom, center e podedois ao mesmo temp
                 width: 2000px;
-                height: 1500px;
+                height: 1500px;*/
+
+                background-size: cover; /*Serve para definir COMO a Imagem sera exibida ao fundo do elemento html -  contain - cover - px - % auto*/
+                background-attachment: fixed; /*Define como a imagem vai lidar com scroll ao fundo do elento html - scroll e fixed*/
+                text-shadow: 3px 2px 3px red; /*Define a sombra do texto*/
+                position: relative;
             }
+
+            .noticia{
+                border: solid 3px white;
+                width: 200px;
+                position: fixed; /*Define o posicionamento atras ou na frente dos elementos html; fixed, relative, absolute e static */
+                height: 100px;
+                overflow: visible; /*Configura o comportamento de quando por exemplo um texto passa das bordas de um elemnto html (da um overflow) visible/hidden/scroll/auto*/
+                box-shadow: 3px 3px 3px 3px blue; /*Define a sombra de um elemento*/
+            }
+
+            .um{
+                background-color: blue;
+                top: 0px;
+                left: 50px;
+                z-index: 3; /*Define a ordem que o elemento vai ficar uns atras dos outros*/
+            }
+
+            .dois{
+                background-color: blue;
+                top: 100px;
+                left: 150px;
+            }
+
+            .tres{
+                background-color: blue;
+                top: 200px;
+                left: 250px;
+            }
+
+        ''
