@@ -64,3 +64,25 @@
                 display: block;
                 width: 200px;
             }
+
+            #teste_estilo_lista_ul{
+                list-style-type: none; /*disc, circle, none defini o estilo de marcador da lista não ordenada (UL) */
+            }
+
+            #teste_estilo_lista_ol{
+                /* list-style-type: upper-alpha; /*decimal - lower-roman - upper-roman - lower-greek - lower-alpha - upper-alpha - define o estilo de marcadores de listas ordenadas */
+                list-style-image: url(image/senhordosaneis_fundo.jpg);
+            }
+
+            li{
+                border: solid 3px orange;
+                list-style-position: outside; /*Ele serve para dizer ao navegador se o marcador da lista faz parte ou não do texto da lista; inside a outside*/
+            }
+
+            #impacto{
+                list-style-image: url(image/senhordosaneis_fundo.jpg); /*Carrega imagem ao fundo do elemento html*/
+                background-repeat: ; /* no-repeat / repeat / repeat-y / Configura a forma como a imagem ira repetir ao fundo do elemento html*/ 
+                background-position: center;
+                width: 2000px;
+                height: 1500px;
+            }
