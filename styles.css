@@ -17,8 +17,8 @@
             }
 
             body{
-                background-color: rgb(255, 255, 255); /*Cor de fundo*/
-                color: rgb(0, 0, 0); /*Cor da fonte*/
+                background-color: rgb(0, 0, 0); /*Cor de fundo*/
+                color: rgb(255, 255, 255); /*Cor da fonte*/
                 font-family: "Roboto", sans-serif; /*Fonte do texto*/
                 font-size: 16px;
 
@@ -68,4 +68,55 @@
                 background-color: #fff000;
                 display: inline;
                 width: 200px;
+            }
+
+            #teste_estilo_lista_ul{
+                list-style-type: none; /*disc, circle, none defini o estilo do marcador da lista não ordenada*/
+            }
+
+             #teste_estilo_lista_ol{
+                list-style-type: lower-alpha; /*decimal, lower-roman, upper-roman, lower-greek, lower-alpha, upper-alfha - define o estilo de marcadores da lista ordenada*/
+                list-style-image: url(image/seta_direita_vermelha.png);
+            }
+
+            li{
+                border: solid 3px orange;
+                list-style-position: outside; /*ele serve para dizer ao navegador se o marcador da lista faz parte ou não do texto da lista; aside e outside */
+            }
+                #impacto{
+                    background-image: url(image/senhordosaneis_fundo.jpg);
+                    background-repeat: repeat; /*no-repeat, repeat, repeat y, repeat x, configura a forma como a imagem ira repetir ao fundo do elemento html*/
+                    background-position: center; /*left, right, top, bottom, center e pode dois ao mesmo tempo*/
+                    width: 2000px;
+                    height: 1500px;
+                    background-size: cover; /*serve para definir como a imagem sera exibida ao fundo do elemento html, contain, cover, px, auto*/
+                    background-attachment: fixed; /*define como a imagem vai lidar com o scroll ao fundo do elemento html -scroll e fixed*/
+                    text-shadow: 13px 3px 2px red;/*define a sombra do texto */
+            }
+
+            .noticia{
+                border: solid 3px white;
+                width: 200px;
+                position: relative;/*define o posicionamento atras ou na frente dos elementos html, fixed, relative, absolute*/
+                height: 100px;
+                overflow: visible;
+                box-shadow: 3px 3px 3px 3px orange;
+            }
+
+            .um{
+                background-color: blue;
+                top: 0px;
+                left: 50px;
+            }
+
+            .dois{
+                background-color: red;
+                top: 10px;
+                left: 150px;
+            }
+
+            .tres{
+                background-color: #fff000;
+                top: 200px;
+                left: 250px;
             }
