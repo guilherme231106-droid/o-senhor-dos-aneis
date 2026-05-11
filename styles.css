@@ -59,6 +59,39 @@
                 padding-bottom: 20px;
             }
 
+            nav a{
+                text-decoration: none;
+                color: white;
+            }
+
+            nav a:hover{
+                color: black;
+                opacity: 0.7;
+            }
+
+            .transicao{
+                background-color: white;
+                border: solid 3px red;
+                color: black;
+                height: 300px;
+                width: 300px;
+                transition-duration: 3s;
+                transition-property: all;
+                transition-delay: 0.5s;
+                transition-timing-function: ease-in;
+            }
+
+            .transicao:hover{
+                background-color: pink;
+                width: 600px;
+                color: blue;
+            }
+
+            #email:focus{
+                background-color: green;
+                color: white;
+            }
+
 
             nav a{
                 text-decoration: none;
@@ -94,6 +127,35 @@
                     text-shadow: 13px 3px 2px red;/*define a sombra do texto */
             }
 
+            h1{
+                animation-name: multicolor;
+                animation-duration: 5s;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 3;
+            }
+
+            @keyframes multicolor {
+                from{color: red;}
+                to{color: blue;}
+                0%{}
+                25%{}
+             }
+
+             .animaçao img{
+                display: block;
+                animation: foguete;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+             }
+
+             @keyframes foguete{
+                0%{margin-left: 0%;}
+                25%{margin-left: 80%; transform: rotate(0deg);}
+                50%{margin-left: 80%; transform: rotate(-120deg);}
+                75%{margin-left: 0%; transform: rotate(-120deg);}
+                100%{margin-left: 0%; transform: rotate(0deg);}
+             }
             .noticia{
                 border: solid 3px white;
                 width: 200px;
